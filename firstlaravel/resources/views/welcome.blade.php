@@ -25,7 +25,7 @@
                         <a href="/index.html">HOME</a>
                         <a href="/services.html" class="btn-servs btn btn-outline-info border-bottom-0 border-top-0 btn-rounded" >SERVICES</a>
                         <a href="/contact">CONTACT</a>
-                        <a href="#!">ABOUT</a>
+                        <a href="#!">about</a>
                     </nav>
                         <button class="col-1 btn d-lg-none" style="background-color: #e76c75;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-three-dots"></i></button>
                         <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
