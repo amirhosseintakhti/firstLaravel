@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'Butler';
+  src: url('Butler-UltraLight.woff2') format('woff2'),
+      url('Butler-UltraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Butler';
+  src: url('Butler-Medium.woff2') format('woff2'),
+      url('Butler-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Butler';
+  src: url('Butler-Light.woff2') format('woff2'),
+      url('Butler-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Butler';
+  src: url('Butler-Black.woff2') format('woff2'),
+      url('Butler-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Butler';
+  src: url('Butler-Bold.woff2') format('woff2'),
+      url('Butler-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Butler';
+  src: url('Butler-ExtraBold.woff2') format('woff2'),
+      url('Butler-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Butler';
+  src: url('Butler.woff2') format('woff2'),
+      url('Butler.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+    font-family:'Butler';
+}
+.custom-loader {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:8px solid;
+    border-color:#c4c3bf #0000;
+    animation:s1 1s infinite;
+  }
+  @keyframes s1 {to{transform: rotate(.5turn)}} 
+
+.bg-color{
+    background-color: #f8f7f1;
+
+  }
+.btn-rounded{
+    border-radius: 30px!important;
+}
+.btn-p{
+    padding: 3px 10px;
+}
+.btn-servs{
+    font-size: 10px!important;
+}
+nav a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #565553;
+    font-size: 12px;
+}
+nav a:last-child{
+    margin-right: 0;
+}
+nav a:hover{
+    color: aqua;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+.icon-header{
+    background-color: white;
+    border-radius: 50%;
+    padding: 6px;
+
+}
+.y-exp{
+    font-size: 50px;
+}
+@media screen and (max-width:991px){
+    .question{
+        font-size: 25px!important;
+    }
+
+}
+.box{
+    transition: all 2s;
+}
+.box:hover{
+    transform: scale(1.1)!important;
+
+}
+.input1{
+    outline: none !important;
+    border-top:0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-color: black !important;
+    border-radius: 0!important;
+    background-color: #f8f7f1 !important;
+    font-size: 12px;
+}
+.split{
+    background-image: url(/assets/amiro.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+@media (min-width: 320px) {
+    .side_nav {
+      width: 50px;
+    }
+  }
+  @media (min-width: 481px) {
+    .side_nav {
+      width: 60px;
+    }
+  }
+  @media (min-width: 641px) {
+    .side_nav {
+      width: 70px;
+    }
+  }
+  @media (min-width: 961px) {
+    .side_nav {
+      width: 80px;
+    }
+  }
+  @media (min-width: 1025px) {
+    .side_nav {
+      width: 90px;
+    }
+  }
+  @media (min-width: 1281px) {
+    .side_nav {
+      width: 100px;
+    }
+  }
