@@ -24,7 +24,7 @@
                     <nav class="col-6 d-none d-lg-flex align-items-center justify-content-lg-center justify-content-sm-end ">
                         <a href="/index.html">HOME</a>
                         <a href="/services.html" class="btn-servs btn btn-outline-info border-bottom-0 border-top-0 btn-rounded" >SERVICES</a>
-                        <a href="/contact.html">CONTACT</a>
+                        <a href="/contact">CONTACT</a>
                         <a href="#!">ABOUT</a>
                     </nav>
                         <button class="col-1 btn d-lg-none" style="background-color: #e76c75;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-three-dots"></i></button>
@@ -36,7 +36,7 @@
                           <div class="offcanvas-body">
                             <a class="text-decoration-none d-block" href=/index.html>home</a>
                             <a class="text-decoration-none d-block" href=/services.html>services</a>
-                            <a class="text-decoration-none d-block" href=/contact.html>contact</a>
+                            <a class="text-decoration-none d-block" href=/contact>contact</a>
                             <a class="text-decoration-none d-block" href=/about.html>about</a>
                           </div>
                         </div>
