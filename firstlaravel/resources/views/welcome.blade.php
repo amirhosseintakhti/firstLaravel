@@ -1,8 +1,10 @@
 @extends('layouts.main')
-@section('content')
-    
 
-            <section class="container my-3">
+
+@section('content')
+
+            <div class="bg-color">
+                <section class="container my-3">
                 <div class="row d-flex justify-content-between">
                     <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-start ">
                         <h1 class="fw-bolder">HEY THERE,<br>i'm amir</h1>
@@ -25,6 +27,7 @@
                 </div>
             </section>
         </div>
+
             <section class="container">
                 <div class="row d-flex justify-content-between">
                     <div class="col-12 col-lg-4 order-1 order-lg-0">
@@ -64,34 +67,11 @@
                     <div class="row">
                         <div class="col mt-3 text-center text-lg-start">
                                 <h3>start by <a href="/services.html" style="color:#e76c75 ;">saying hi</a></h3>
-                        <div class="col">
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
                         </div>
                     </div>
                 </section>
             </div>
-            <div class="footer container">
-                <div class="row border-top">
-                    <div class="col pt-3">
-                        <h5 style="font-family:caros italic; font-size: 14px;" class="d-inline">AT dev</h5>
-                        <span class="border-start ms-3"></span>
-                        <span class="ms-3" style="font-size: 12px;">all rights reserved</span>
-                    </div>
-                </div>
-            </div>
+            
     </div>
-    <script>
-        setTimeout(() => {
-            document.getElementById('loader').style.display='none'
-        }, 1000);
-        setTimeout(() => {
-            document.getElementById('body').style.display='block'
-        }, 1000);
-    </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-</body>
-</html>
+    
 @endsection

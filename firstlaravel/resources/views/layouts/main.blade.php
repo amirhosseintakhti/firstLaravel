@@ -45,4 +45,30 @@
                     </div>
                 </div>
             </header>
-            @yield('page')
+        </div>
+
+            @yield('content')
+
+            <div class="footer container">
+                <div class="row border-top">
+                    <div class="col pt-3">
+                        <h5 style="font-family:caros italic; font-size: 14px;" class="d-inline">AT dev</h5>
+                        <span class="border-start ms-3"></span>
+                        <span class="ms-3" style="font-size: 12px;">all rights reserved</span>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+            <script>
+                setTimeout(() => {
+                    document.getElementById('loader').style.display='none'
+                }, 1000);
+                setTimeout(() => {
+                    document.getElementById('body').style.display='block'
+                }, 1000);
+            </script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        </body>
+        </html>
+            
