@@ -1,9 +1,11 @@
 @extends('layouts.main')
-
-
+@section('title','profile')
+@section('bg','bg-color1')
 @section('content')
+@section('bg-f' ,'bg-color2')
+{{-- @section('bg' , 'bg-color') --}}
 
-            <div class="bg-color">
+            <div>
                 <section class="container my-3">
                 <div class="row d-flex justify-content-between">
                     <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-start ">
@@ -27,7 +29,7 @@
                 </div>
             </section>
         </div>
-
+        <div class="bg-color2">
             <section class="container">
                 <div class="row d-flex justify-content-between">
                     <div class="col-12 col-lg-4 order-1 order-lg-0">
@@ -53,7 +55,9 @@
                     </div>
                 </div>
             </section>
-            <div class="bg-color ">
+        </div>
+            
+            <div>
                 <section class=" container">
                     <div class="row pt-5">
                         <div class="col-12 col-lg-8 text-center text-lg-start">
@@ -72,6 +76,6 @@
                 </section>
             </div>
             
-    </div>
-    
+
+  
 @endsection

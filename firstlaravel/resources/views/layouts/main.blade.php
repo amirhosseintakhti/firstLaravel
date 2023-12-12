@@ -10,14 +10,14 @@
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <title>AT</title>
+    <title>@yield('title')</title>
 </head>
-<body>
+<body class="@yield('bg')">
     <div style="position: fixed; top: 0; bottom: 0; right: 0; left: 0; display: flex; justify-content: center; align-items: center;" id="loader">
         <div class="custom-loader"></div>
     </div>
     <div id="body" style="display: none;">
-        <div class="bg-color" style="background-color: #f8f7f1;">
+        <div class="@yield('bg')">
             <header class="container">
                 <div class="row d-flex justify-content-between align-items-center flex-wrap">
                     <div class="col-3 d-flex justify-content-start text-sm-start "><img src="/assets/photo-output.PNG" alt="logo" style="width: 70px;"></div>
@@ -48,8 +48,8 @@
         </div>
 
             @yield('content')
-
-            <div class="footer container">
+            <div class="@yield('bg-f')">
+                <div class="footer container ">
                 <div class="row border-top">
                     <div class="col pt-3">
                         <h5 style="font-family:caros italic; font-size: 14px;" class="d-inline">AT dev</h5>
@@ -58,6 +58,8 @@
                     </div>
                 </div>
             </div>
+            </div>
+            
 
     </div>
             <script>
@@ -72,3 +74,4 @@
         </body>
         </html>
             
+ 
