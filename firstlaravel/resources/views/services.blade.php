@@ -6,7 +6,6 @@
 {{-- @section('') --}}
 @section('content')
 
-
             <main class="py-5">
                 <div class="container px-3">
                     <div style="background-color:#f8f7f1;" class="rounded-4 py-5 px-4">
