@@ -13,10 +13,13 @@
     <title>contact</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container-fluid fill">
+        <div class="row fill">
+            <div class="col-8">
+                <header class="px-2">
+                    <div class="row d-flex justify-content-between align-items-center flex-wrap">
                         <div class="col-3 d-flex justify-content-start text-sm-start "><img src="/assets/photo-output.PNG" alt="logo" style="width: 70px;"></div>
-                        <nav class="col-5 d-none d-lg-flex align-items-center justify-content-lg-center justify-content-sm-end ">
+                        <nav class="col-6 d-none d-lg-flex align-items-center justify-content-lg-center justify-content-sm-end ">
                             <a href="/">HOME</a>
                             <a href="/services" class="btn-servs btn btn-outline-info border-bottom-0 border-top-0 btn-rounded" >SERVICES</a>
                             <a href="/contact">CONTACT</a>
@@ -37,7 +40,9 @@
                             </div>
                         <div class="col justify-content-lg-end align-items-center flex-wrap d-none d-lg-flex" style="font-size: 10px; text-align: center;">
                         09115388720<a href="tel:+989115388729" class="ms-3 icon-header text-center"><i class="bi bi-telephone-outbound text-center"></i></a>
-
+                        </div>
+                    </div>
+                </header>
                 <div class="row justify-content-center my-5">
                     <div class="col-11 px-4 py-5 rounded-4" style="background-color: #f8f7f1; ">
                         <div class="row">
@@ -71,9 +76,14 @@
                         </div>
                     </div>
                 </div>
-
-            <div class="col-4 side-nav" style="padding: 0"  >
-                <img src="./assets/amiro.webp" alt="" style="width: 100%;" >
+                {{-- <div class="row">
+                    <div class="col">
+                        <img src="/assets/bitmap.svg" alt="">
+                    </div>
+                </div> --}}
+            </div>
+            <div class="col-4 split" style="padding: 0; "   >
+                {{-- <img src="./assets/amiro.webp" alt="" style="width: 100%;" > --}}
             </div>
         </div>
      </div>
