@@ -17,7 +17,7 @@
         <div class="custom-loader"></div>
     </div>
     <div id="body" style="display: none;">
-        <div class="@yield('bg')">
+        <div class="@yield('bg-header')">
             <header class="container">
                 <div class="row d-flex justify-content-between align-items-center flex-wrap">
                     <div class="col-3 d-flex justify-content-start text-sm-start "><img src="/assets/photo-output.PNG" alt="logo" style="width: 70px;"></div>

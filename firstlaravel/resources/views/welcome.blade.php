@@ -1,8 +1,8 @@
 @extends('layouts.main')
 @section('title','profile')
 @section('bg','bg-color1')
-@section('content')
 @section('bg-f' ,'bg-color2')
+@section('content')
 {{-- @section('bg' , 'bg-color') --}}
 
             <div>
