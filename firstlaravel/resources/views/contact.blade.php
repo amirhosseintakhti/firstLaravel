@@ -50,30 +50,37 @@
                                 <h1 style="color:#452f54;">contact us</h1>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <label for="nameinput" class="form-lable"></label>
-                                <input type="name" id="nameinput" class="form-control input1 " placeholder="name" >
+                        <form action="/send-message" method="post">
+                            @csrf
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="nameinput" class="form-lable"></label>
+                                    <input type="name" id="nameinput" class="form-control input1 " placeholder="name" >
+                                </div>
+                                <div class="col-6">
+                                    <label for="inputemail" class="form-lable" ></label>
+                                <input type="email" id="inputemail" class="form-control input1" placeholder="email" aria-describedby="emailHelp"/>
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <label for="inputemail" class="form-lable" ></label>
-                            <input type="email" id="inputemail" class="form-control input1" placeholder="email" aria-describedby="emailHelp"/>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="topicinput" class="form-lable"></label>
+                                    <input type="text" id="topicinput" class="form-control input1" placeholder="topic">
+                                </div>
+                                <div class="col-12">
+                                    <label for="messageinput" class="form-lable"></label>
+                                    <textarea type="text" id="messageinput" class="form-control input1" placeholder="message" rows="3"></textarea>
+                                </div>
+                                <div class="col-12 py-2">
+                                    <input class="input-submit" type="submit" value="submit" />
+                                </div>
+                                <div class="col-8 pt-3">
+                                    <input class="form-check-input" id="chek" type="checkbox" value="checkbox">
+                                    <label for="check" class="form-check-lable "><small class="text-muted">filled</small></label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="topicinput" class="form-lable"></label>
-                                <input type="text" id="topicinput" class="form-control input1" placeholder="topic">
-                            </div>
-                            <div class="col-12">
-                                <label for="messageinput" class="form-lable"></label>
-                                <textarea type="text" id="messageinput" class="form-control input1" placeholder="message" rows="3"></textarea>
-                            </div>
-                            <div class="col-8 pt-3">
-                                <input class="form-check-input" id="chek" type="checkbox" value="checkbox">
-                                <label for="check" class="form-check-lable "><small class="text-muted">filled</small></label>
-                            </div>
-                        </div>
+                            </form>
+      
                     </div>
                 </div>
                 {{-- <div class="row">

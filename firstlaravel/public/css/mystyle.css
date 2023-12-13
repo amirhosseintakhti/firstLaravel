@@ -128,6 +128,14 @@ nav a:hover{
     background-color: #f8f7f1 !important;
     font-size: 12px;
 }
+.input-submit{
+  background-color: #452f54;
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
 .split{
     background-image: url(/assets/amiro.webp);
     background-size: cover;

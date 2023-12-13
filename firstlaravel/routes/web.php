@@ -24,6 +24,9 @@ Route::get('/contact', function () {
 Route::get('/services', function () {
     return view('services');
 });
+Route::post('/send-message', function () {
+    return 'hello world';
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
