@@ -55,21 +55,21 @@
                             <div class="row">
                                 <div class="col-6">
                                     <label for="nameinput" class="form-lable"></label>
-                                    <input type="name" id="nameinput" class="form-control input1 " placeholder="name" >
+                                    <input name="fullName" type="name" id="nameinput" class="form-control input1 " placeholder="name" >
                                 </div>
                                 <div class="col-6">
                                     <label for="inputemail" class="form-lable" ></label>
-                                <input type="email" id="inputemail" class="form-control input1" placeholder="email" aria-describedby="emailHelp"/>
+                                <input name="email" type="email" id="inputemail" class="form-control input1" placeholder="email" aria-describedby="emailHelp"/>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12">
                                     <label for="topicinput" class="form-lable"></label>
-                                    <input type="text" id="topicinput" class="form-control input1" placeholder="topic">
+                                    <input name="topic" type="text" id="topicinput" class="form-control input1" placeholder="topic">
                                 </div>
                                 <div class="col-12">
                                     <label for="messageinput" class="form-lable"></label>
-                                    <textarea type="text" id="messageinput" class="form-control input1" placeholder="message" rows="3"></textarea>
+                                    <textarea name="message" type="text" id="messageinput" class="form-control input1" placeholder="message" rows="3"></textarea>
                                 </div>
                                 <div class="col-12 py-2">
                                     <input class="input-submit" type="submit" value="submit" />

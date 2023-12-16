@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,8 +25,13 @@ Route::get('/contact', function () {
 Route::get('/services', function () {
     return view('services');
 });
-Route::post('/send-message', function () {
-    return 'hello world';
+Route::post('/send-message', function ( Request $request) {
+    return '<ul>'.
+    '<li>'.$request->email.'</li>'.
+    '<li>'.$request->fullName.'</li>'.
+    '<li>'.$request->topic.'</li>'.
+    '<li>'.$request->message.'</li>'.
+    '</ul>';
 });
 
 Route::get('/dashboard', function () {
