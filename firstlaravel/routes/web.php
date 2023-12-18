@@ -25,13 +25,19 @@ Route::get('/contact', function () {
 Route::get('/services', function () {
     return view('services');
 });
+
 Route::post('/send-message', function ( Request $request) {
-    return '<ul>'.
-    '<li>'.$request->email.'</li>'.
-    '<li>'.$request->fullName.'</li>'.
-    '<li>'.$request->topic.'</li>'.
-    '<li>'.$request->message.'</li>'.
-    '</ul>';
+    // return '<ul>'.
+    // '<li>'.$request->email.'</li>'.
+    // '<li>'.$request->fullName.'</li>'.
+    // '<li>'.$request->topic.'</li>'.
+    // '<li>'.$request->message.'</li>'.
+    // '</ul>';
+
+    $array = array($request);
+    foreach($array as $request){
+        echo $request;
+    }
 });
 
 Route::get('/dashboard', function () {
