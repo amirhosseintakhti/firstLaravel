@@ -31,12 +31,14 @@ Route::post('/send-message', function ( Request $request) {
     // '<li>'.$request->email.'</li>'.
     // '<li>'.$request->fullName.'</li>'.
     // '<li>'.$request->topic.'</li>'.
-    // '<li>'.$request->message.'</li>'.
+    // '<li>''</li>'.
     // '</ul>';
 
     $array = array($request);
     foreach($array as $request){
-        echo $request;
+         echo $request->fullName . '</br>' . $request->email . '</br>' . $request->topic. '</br>' . $request->message ; 
+
+
     }
 });
 
