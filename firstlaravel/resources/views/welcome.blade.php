@@ -6,7 +6,7 @@
 {{-- @section('bg' , 'bg-color') --}}
 
             <div>
-                <section class="container my-3">
+                <section class="container mt-3">
                 <div class="row d-flex justify-content-between">
                     <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-start ">
                         <h1 class="fw-bolder">HEY THERE,<br>i'm amir</h1>
