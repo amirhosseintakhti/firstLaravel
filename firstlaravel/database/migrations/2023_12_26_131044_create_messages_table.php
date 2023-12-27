@@ -13,7 +13,10 @@ return new class extends Migration
     {
         Schema::create('messages', function (Blueprint $table) {
             $table->id();
+            $table->string('fullName',50);
             $table->string('email',250)->nullable();
+            $table->string('topic',250);
+            $table->string('message',1000);
             $table->timestamps();
         });
     }
