@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,12 +28,22 @@ Route::get('/services', function () {
 });
 
 Route::post('/send-message', function ( Request $request) {
-    // return '<ul>'.
-    // '<li>'.$request->email.'</li>'.
-    // '<li>'.$request->fullName.'</li>'.
-    // '<li>'.$request->topic.'</li>'.
-    // '<li>''</li>'.
-    // '</ul>';
+    
+    DB::table('messages')->insert([
+        'fullname' =>$request ->fullName,
+        'email' =>$request ->email,
+        'topic' =>$request ->topic,
+        'message' =>$request ->message,
+
+
+    ]);
+    
+    return '<ul>'.
+    '<li>'.$request->fullName.'</li>'.
+    '<li>'.$request->email.'</li>'.
+    '<li>'.$request->topic.'</li>'.
+    '<li>'.$request->message.'</li>'.
+    '</ul>';
 
     // $array = array($request);
     // foreach($array as $request){
