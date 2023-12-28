@@ -34,12 +34,12 @@ Route::post('/send-message', function ( Request $request) {
     // '<li>''</li>'.
     // '</ul>';
 
-    $array = array($request);
-    foreach($array as $request){
-         echo $request->fullName . '</br>' . $request->email . '</br>' . $request->topic. '</br>' . $request->message ; 
+    // $array = array($request);
+    // foreach($array as $request){
+    //      echo $request->fullName . '</br>' . $request->email . '</br>' . $request->topic. '</br>' . $request->message ; 
 
 
-    }
+    // }
 });
 
 Route::get('/dashboard', function () {
