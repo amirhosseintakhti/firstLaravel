@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Message;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
@@ -29,7 +30,8 @@ Route::get('/services', function () {
 
 Route::post('/send-message', function ( Request $request) {
     
-    DB::table('messages')->insert([
+
+    Message::insert([
         'fullname' =>$request ->fullName,
         'email' =>$request ->email,
         'topic' =>$request ->topic,
@@ -37,6 +39,14 @@ Route::post('/send-message', function ( Request $request) {
 
 
     ]);
+    // DB::table('messages')->insert([
+    //     'fullname' =>$request ->fullName,
+    //     'email' =>$request ->email,
+    //     'topic' =>$request ->topic,
+    //     'message' =>$request ->message,
+
+
+    // ]);
     
     return '<ul>'.
     '<li>'.$request->fullName.'</li>'.
