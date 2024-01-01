@@ -83,10 +83,15 @@
                             <div class="col-9 justify-content-center pt-3">
                               
                                 @foreach ($messages as $message)
-                                {{$message->fullName }}<button type="button" class="btn btn-outline-danger float-end">delete</button><br>
+                                {{$message->fullName }}<br>
                                 {{-- {{$message->email}}<br> --}}
                                 {{$message->topic}}<br>
                                 {{$message->message}}
+                                <form  method="post" action="/delet-message/{{$message->id}}">
+                                @scrf
+                                @method('delete')
+                                <input class="btn btn-outline-danger float-end" type="submit" value="delete">
+                                </form>
                                 <hr>
                                 @endforeach
                             </div>
