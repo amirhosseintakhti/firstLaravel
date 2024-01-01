@@ -19,7 +19,8 @@ use App\Http\Controllers\ProfileController;
 
 Route::view('/', 'welcome');
 Route::get('/contact', function () {
-    return view('contact');
+    $messages = Message::all()->sortByDesc('created_at');
+    return view('contact',['messages'=>$messages]);
 });
 // Route::get('/page/{number}', function (string $number) {
 //     return 'page '.$number;
@@ -30,15 +31,21 @@ Route::get('/services', function () {
 
 Route::post('/send-message', function ( Request $request) {
     
+    $message = new Message;
 
-    Message::insert([
-        'fullname' =>$request ->fullName,
-        'email' =>$request ->email,
-        'topic' =>$request ->topic,
-        'message' =>$request ->message,
+    $message->fullName = $request->fullName;
+    $message->email =$request->email;
+    $message->topic = $request->topic;
+    $message->message =$request->message;
+    $message->save();
+    // Message::insert([
+    //     'fullname' =>$request ->fullName,
+    //     'email' =>$request ->email,
+    //     'topic' =>$request ->topic,
+    //     'message' =>$request ->message,
 
 
-    ]);
+    // ]);
     // DB::table('messages')->insert([
     //     'fullname' =>$request ->fullName,
     //     'email' =>$request ->email,
@@ -47,13 +54,14 @@ Route::post('/send-message', function ( Request $request) {
 
 
     // ]);
-    
-    return '<ul>'.
-    '<li>'.$request->fullName.'</li>'.
-    '<li>'.$request->email.'</li>'.
-    '<li>'.$request->topic.'</li>'.
-    '<li>'.$request->message.'</li>'.
-    '</ul>';
+    return redirect('/contact');
+
+    // return '<ul>'.
+    // '<li>'.$request->fullName.'</li>'.
+    // '<li>'.$request->email.'</li>'.
+    // '<li>'.$request->topic.'</li>'.
+    // '<li>'.$request->message.'</li>'.
+    // '</ul>';
 
     // $array = array($request);
     // foreach($array as $request){

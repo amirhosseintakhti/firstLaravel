@@ -80,8 +80,18 @@
                                 </div>
                             </div>
                             </form>
-      
+                            <div class="col-9 justify-content-center pt-3">
+                              
+                                @foreach ($messages as $message)
+                                {{$message->fullName }}<br>
+                                {{-- {{$message->email}}<br> --}}
+                                {{$message->topic}}<br>
+                                {{$message->message}}
+                                <hr>
+                                @endforeach
+                            </div>
                     </div>
+                    
                 </div>
                 {{-- <div class="row">
                     <div class="col">
