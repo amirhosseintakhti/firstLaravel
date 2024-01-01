@@ -83,7 +83,7 @@
                             <div class="col-9 justify-content-center pt-3">
                               
                                 @foreach ($messages as $message)
-                                {{$message->fullName }}<br>
+                                {{$message->fullName }}<button type="button" class="btn btn-outline-danger float-end">delete</button><br>
                                 {{-- {{$message->email}}<br> --}}
                                 {{$message->topic}}<br>
                                 {{$message->message}}
