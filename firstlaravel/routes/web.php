@@ -28,6 +28,11 @@ Route::get('/contact', function () {
 Route::get('/services', function () {
     return view('services');
 });
+Route::delete('/delete-messages/{id}',function($id){
+    $message = Message::find($id);
+    $message ->delete();
+    return redirect('/contact#messageArea');
+});
 
 Route::post('/send-message', function ( Request $request) {
     

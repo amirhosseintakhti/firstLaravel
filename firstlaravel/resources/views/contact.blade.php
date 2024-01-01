@@ -50,7 +50,7 @@
                                 <h1 style="color:#452f54;">contact us</h1>
                             </div>
                         </div>
-                        <form action="/send-message" method="post">
+                        <form action="/send-message" method="post" >
                             @csrf
                             <div class="row">
                                 <div class="col-6">
@@ -80,19 +80,20 @@
                                 </div>
                             </div>
                             </form>
-                            <div class="col-9 justify-content-center pt-3">
+                            <div class="col-9 justify-content-center pt-3 border-bottom"  id="messageArea">
                               
                                 @foreach ($messages as $message)
                                 {{$message->fullName }}<br>
                                 {{-- {{$message->email}}<br> --}}
                                 {{$message->topic}}<br>
                                 {{$message->message}}
-                                <form  method="post" action="/delet-message/{{$message->id}}">
-                                @scrf
+                                <div class="float-end"><form  method="post" action="/delete-messages/{{$message->id}}" >
+                                @csrf
                                 @method('delete')
-                                <input class="btn btn-outline-danger float-end" type="submit" value="delete">
+                                <input class="btn btn-outline-danger" type="submit" value="delete">
                                 </form>
-                                <hr>
+                                </div>
+                                <div class="border-bottom pt-3"></div>
                                 @endforeach
                             </div>
                     </div>
