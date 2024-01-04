@@ -67,8 +67,7 @@
                                     <label for="topicinput" class="form-lable"></label>
                                     <input name="topic" type="text" id="topicinput" class="form-control input1" placeholder="topic">
                                 </div>
-                                <div class="col-12">   <div class="col-12">
-
+                                <div class="col-12">
                                     <label for="messageinput" class="form-lable"></label>
                                     <textarea name="message" type="text" id="messageinput" class="form-control input1" placeholder="message" rows="3"></textarea>
                                 </div>

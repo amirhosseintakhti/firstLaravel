@@ -4,6 +4,7 @@ use App\Models\Message;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\messageController;
 use App\Http\Controllers\ProfileController;
 
 /*
@@ -18,10 +19,7 @@ use App\Http\Controllers\ProfileController;
 */
 
 Route::view('/', 'welcome');
-Route::get('/contact', function () {
-    $messages = Message::all()->sortByDesc('created_at');
-    return view('contact',['messages'=>$messages]);
-});
+Route::get('/contact' ,[messageController::class,'index']);
 // Route::get('/page/{number}', function (string $number) {
 //     return 'page '.$number;
 // });
