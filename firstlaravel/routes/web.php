@@ -26,11 +26,7 @@ Route::get('/contact' ,[messageController::class,'index']);
 Route::get('/services', function () {
     return view('services');
 });
-Route::delete('/delete-messages/{id}',function($id){
-    $message = Message::find($id);
-    $message ->delete();
-    return redirect('/contact#messageArea');
-});
+Route::delete('/delete-messages/{id}',[messageController::class,'destroy']);
 
 Route::post('/send-message', function ( Request $request) {
     
