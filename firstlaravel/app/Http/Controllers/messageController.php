@@ -10,7 +10,8 @@ class messageController extends Controller
 {
     public function index() {
         $messages = Message::all()->sortByDesc('created_at');
-        return view('contact',['messages'=>$messages]);
+        // return view('contact',['messages'=>$messages]);
+        return response()->json(['messages' =>$messages]);
     }
     public function destroy ($id){
         $message = Message::find($id);
